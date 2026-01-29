@@ -2,6 +2,7 @@ import { appRouter } from "../../../server/root";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 const handler = (req: Request) =>
   fetchRequestHandler({
